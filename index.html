@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeoDas Showroom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            width: auto;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            width: auto;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+        .hero1{
+            padding-top: 80px;
+            padding-left: 500px;
+            padding-right: 250px;
+            padding-bottom: 100px;
+        }
+        .hero1 button:hover{
+            color:rgb(78, 242, 97);
+        }
+        .hero1 button{
+            background-color: rgba(30, 29, 29, 0.915);
+             border-radius: 10px;
+            font-weight: bold;
+            font-size: 50px;
+            font-family: monospace;
+            color: white;
+            padding-left: 20px;
+           
+            margin-left: 100px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .hero {
+            background: url('background.jpg') no-repeat center center/cover;
+            height: 400px;
+            text-size-adjust: 25px;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(249, 246, 246);
+            text-shadow: 2px 2px 4px rgba(97, 213, 237, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 45px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .bike-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .bike {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .bike img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .bike h3 {
+            margin: 10px;
+            font-size: 22px;
+        }
+
+        .bike p {
+            margin: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .bike button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .bike button:hover {
+            background-color: darkorange;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to LeoDas Bike Showroom</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#bikes">Bikes</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>CLICK THE BUTTON TO PLAY GAME AND WIN PRICES</h1><br>
+    </div>
+    <div  class="hero1">
+        <a href="index2.html">
+            <button >PLAY GAME</button> 
+       </a>
+    </div>
+    <nav></nav>
+    <div id="bikes" class="content">
+        <h2>Our Collection</h2>
+        <div class="bike-grid">
+            <div class="bike">
+                <img src="duke.jpeg" alt="Bike 1">
+                <h3>KTM Duke 390</h3>
+                <p>Price: $5,000</p>
+                    <button onclick="document.location='https://www.ktmindia.com/ktm-bikes/naked-bike/ktm-200-duke'">Learn More</button>
+            </div>
+            <div class="bike">
+                <img src="r15.jpeg" alt="Bike 2">
+                <h3>Yamaha R15</h3>
+                <p>Price: $4,000</p>
+                <button onclick="document.location='https://www.bikewale.com/yamaha-bikes/r15/'">Learn More</button>
+            </div>
+            <div class="bike">
+                <img src="re350.jpeg" alt="Bike 3">
+                <h3>Royal Enfield Classic 350</h3>
+                <p>Price: $6,000</p>
+                <button onclick="document.location='https://www.royalenfield.com/in/en/home/'">Learn More</button>
+            </div>
+            <div class="bike">
+                <img src="rs200.jpeg" alt="Bike 4">
+                <h3>Bajaj Pulsar RS200</h3>
+                <p>Price: $3,500</p>
+                <button onclick="document.location='https://www.bajajauto.com/bikes/pulsar'">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <nav></nav>
+    <div id="about" class="content">
+        <h2>About Us</h2>
+        <p>Welcome to LeoDas Bike Showroom, your one-stop destination for the latest and greatest bikes. Whether you're a speed enthusiast or a casual rider, we have something for everyone. Visit us and explore our wide range of bikes today!</p>
+    </div>
+    <nav></nav>
+
+    <div id="contact" class="content">
+        <h2>Contact Us</h2>
+        <p>Email: info@leodasbikeshowroom.com</p>
+        <p>Phone: +1 123 456 7890</p>
+        <p>Address: 123 Main Street, Your City, Your Country</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 LeoDas Bike Showroom. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
