@@ -3,7 +3,7 @@ var rows = 3;
 var columns = 3;
 
 var currTile;
-var otherTile; //blank tile
+var otherTile; 
 
 var turns = 0;
 
@@ -20,12 +20,12 @@ window.onload = function() {
             tile.src = imgOrder.shift() + ".jpeg";
 
             //DRAG FUNCTIONALITY
-            tile.addEventListener("dragstart", dragStart);  //click an image to drag
-            tile.addEventListener("dragover", dragOver);    //moving image around while clicked
-            tile.addEventListener("dragenter", dragEnter);  //dragging image onto another one
-            tile.addEventListener("dragleave", dragLeave);  //dragged image leaving anohter image
-            tile.addEventListener("drop", dragDrop);        //drag an image over another image, drop the image
-            tile.addEventListener("dragend", dragEnd);      //after drag drop, swap the two tiles
+            tile.addEventListener("dragstart", dragStart);  
+            tile.addEventListener("dragover", dragOver);    
+            tile.addEventListener("dragenter", dragEnter);  
+            tile.addEventListener("dragleave", dragLeave);  
+            tile.addEventListener("drop", dragDrop);        
+            tile.addEventListener("dragend", dragEnd);     
 
             document.getElementById("board").append(tile);
 
@@ -34,7 +34,7 @@ window.onload = function() {
 }
 
 function dragStart() {
-    currTile = this; //this refers to the img tile being dragged
+    currTile = this;
 }
 
 function dragOver(e) {
@@ -50,7 +50,7 @@ function dragLeave() {
 }
 
 function dragDrop() {
-    otherTile = this; //this refers to the img tile being dropped on
+    otherTile = this; 
 }
 
 function dragEnd() {
@@ -58,7 +58,7 @@ function dragEnd() {
         return;
     }
 
-    let currCoords = currTile.id.split("-"); //ex) "0-0" -> ["0", "0"]
+    let currCoords = currTile.id.split("-"); 
     let r = parseInt(currCoords[0]);
     let c = parseInt(currCoords[1]);
 
